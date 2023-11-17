@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+</head>
+<link rel="stylesheet" href="calc.css">
+<body>
+    <div class="szamologep-container">
+        <input type="text" id="kijelzo" disabled>
+        <div class="gombok">
+            <button class="muveletijelek" onclick="muveletijelek('/')">/</button>
+            <button class="muveletijelek" onclick="muveletijelek('*')">*</button>
+            <button class="muveletijelek" onclick="muveletijelek('-')">-</button>
+            <button class="muveletijelek" onclick="muveletijelek('+')">+</button>
+
+            <button class="szam" onclick="szam('7')">7</button>
+            <button class="szam" onclick="szam('8')">8</button>
+            <button class="szam" onclick="szam('9')">9</button>
+            <button class="torles" onclick="torles()">C</button>
+
+            <button class="szam" onclick="szam('4')">4</button>
+            <button class="szam" onclick="szam('5')">5</button>
+            <button class="szam" onclick="szam('6')">6</button>
+            <div class="semmi"> </div>
+
+            <button class="szam" onclick="szam('1')">1</button>
+            <button class="szam" onclick="szam('2')">2</button>
+            <button class="szam" onclick="szam('3')">3</button>
+            <div class="semmi"> </div>  
+            
+            <button class="pont" onclick="tort('.')">.</button>
+            <button class="nulla" onclick="szam('0')">0</button>
+            <button class="visszatorles" onclick="visszatorles()">⌫</button>
+            <button class="szamolas" onclick="szamolas()">=</button>
+        </div>
+    </div>
+</body>
+<script src="calc.js"></script>
+</html>
